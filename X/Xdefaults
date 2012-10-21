@@ -1,0 +1,84 @@
+xft.dpi:        75
+Xft.antialias:        true
+xft.hinting:        true
+xft.rgba:        rgb
+
+*customization:				-color
+
+!xterm*termName:				xterm-256color
+!xterm*termName:				xterm
+!xterm*geometry:        90x25
+!xterm*faceName:        Terminus
+!xterm*metaSendsEscape:    true
+!xterm*colorBDMode:    true
+xterm*cursorBlink:    true
+xterm*veryBoldColors:    14
+!xterm*loginShell:    true
+!xterm*charClass:    33:48,35:48,37:48,43:48,45-47:48,64:48,95:48,126:48,35:48,58:48
+xterm*jumpScroll:    true
+xterm*multiScroll:    true
+xterm*boldMode:        true
+xterm*saveLines:    512
+xterm*scrollBar:    false
+!xterm*cursorColor:	#000000
+!color-scheme 1
+!xterm*background:    #222222
+!xterm*foreground:    #ddccbb
+!xterm*colorBD:        #ffffff
+!xterm*cursorColor:    #ddccbb
+
+!xterm*color0:        #221100
+!xterm*color8:        #554444
+!xterm*color1:        #884422
+!xterm*color9:        #cc5533
+!xterm*color2:        #778800
+!xterm*color10:        #88aa22
+!xterm*color3:        #887733
+!xterm*color11:        #aa9955
+!xterm*color4:        #8866cc
+!xterm*color12:        #9977dd
+!xterm*color5:        #885500
+!xterm*color13:        #996600
+!xterm*color6:        #5555aa
+!xterm*color14:        #7777aa
+!xterm*color7:        #bbaa99
+!xterm*color15:        #ddccaa
+
+!color-scheme 2
+!xterm*background:    #222222
+
+!xterm*background:    #1c1c1c
+
+!cwills colors
+!xterm*background:    #121212
+xterm*background:    #000000
+xterm*foreground:    #a6a6a6
+
+xterm*colorBD:       #ffffff
+!xterm*cursorColor:   #a6a6a6
+
+!Black
+xterm*color0:      #000000
+xterm*color8:      #555753
+! Red
+xterm*color1:      #ff6565
+xterm*color9:      #ff8d8d
+! Green
+xterm*color2:      #93d44f
+xterm*color10:     #c8e7a8
+! Yellow
+xterm*color3:      #eab93d
+xterm*color11:     #ffc123
+! Blue
+xterm*color4:      #204a87
+xterm*color12:     #3465a4
+! Mangenta
+xterm*color5:      #706c9a
+xterm*color13:     #826ab1
+! Cyan
+xterm*color6:      #89b6e2
+xterm*color14:     #46a4ff
+! White
+xterm*color7:      #cccccc
+xterm*color15:     #ffffff
+
