@@ -65,3 +65,26 @@ let &guicursor = &guicursor . ",a:blinkon0"
 
 set tabstop=4
 set shiftwidth=4 
+
+" Plugins
+silent! call pathogen#infect()
+silent! call pathogen#helptags()
+
+set autoindent
+
+set pastetoggle=<F2>
+" Wildmenu
+if has("wildmenu")
+    set wildmenu
+    set wildmode=longest:list
+    if has("wildignore")
+        set wildignore+=*.a,*.o
+        set wildignore+=*.bmp,*.gif,*.ico,*.jpg,*.png
+        set wildignore+=.DS_Store,.git,.hg,.svn
+        set wildignore+=*~,*.swp,*.tmp
+        set wildignore+=*.pyc,*.class,*.hi
+    endif
+    if exists("&wildignorecase")
+        set wildignorecase
+    endif
+endif
