@@ -66,7 +66,7 @@ let &guicursor = &guicursor . ",a:blinkon0"
 set tabstop=4
 set noexpandtab
 set shiftwidth=4 
-set autoindent
+set smarttab autoindent
 
 " Plugins
 silent! call pathogen#infect()
