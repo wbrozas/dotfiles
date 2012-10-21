@@ -65,12 +65,12 @@ let &guicursor = &guicursor . ",a:blinkon0"
 
 set tabstop=4
 set shiftwidth=4 
+set noexpandtab
+set autoindent
 
 " Plugins
 silent! call pathogen#infect()
 silent! call pathogen#helptags()
-
-set autoindent
 
 set pastetoggle=<F2>
 " Wildmenu
