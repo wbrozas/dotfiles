@@ -64,7 +64,7 @@ endif
 let &guicursor = &guicursor . ",a:blinkon0"
 
 set tabstop=4
-set noexpandtab
+set expandtab
 set shiftwidth=4 
 set smarttab autoindent
 
