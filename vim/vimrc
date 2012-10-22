@@ -67,6 +67,7 @@ set tabstop=4
 set expandtab
 set shiftwidth=4 
 set smarttab autoindent
+set incsearch
 
 " Plugins
 silent! call pathogen#infect()
