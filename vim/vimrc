@@ -68,6 +68,7 @@ set expandtab
 set shiftwidth=4 
 set smarttab autoindent
 set incsearch
+colorscheme desert
 
 " Plugins
 silent! call pathogen#infect()
