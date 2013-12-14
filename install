@@ -14,6 +14,8 @@ ln -fs "dotfiles/X/xmodmap"             "${HOME}/.xmodmap"
 rm -rf "${HOME}/.vim"
 ln -fs "dotfiles/vim" "${HOME}/.vim"
 
+vim +BundleInstall +qall
+
 #If install ALL flag set then
 if [ "$1" == "-a" ]; then
     rm -f "${HOME}/.xinitrc"
