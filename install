@@ -1,23 +1,23 @@
-#!/usr/bin/env bash
-
-# Check out submodules. The --git-dir option doesn't work here.
-cd "${HOME}/dotfiles"
-git submodule --quiet update --init
-cd "${OLDPWD}"
+#!/bin/bash
 
 # Link in files, replacing whatever's already there.
-ln -fs "dotfiles/bash/bashrc"       "${HOME}/.bashrc"
-ln -fs "dotfiles/bash/inputrc"       "${HOME}/.inputrc"
-ln -fs "dotfiles/git/gitconfig"     "${HOME}/.gitconfig"
-ln -fs "dotfiles/git/gitignore_global"     "${HOME}/.gitignore_global"
-ln -fs "dotfiles/vim/vimrc"         "${HOME}/.vimrc"
-ln -fs "dotfiles/vimperatorrc"         "${HOME}/.vimperatorrc"
-ln -fs "dotfiles/X/Xdefaults"         "${HOME}/.Xdefaults"
-ln -fs "dotfiles/X/xmodmap"         "${HOME}/.xmodmap"
-ln -fs "dotfiles/X/xinitrc"         "${HOME}/.xinitrc"
+ln -fs "dotfiles/bash/bashrc"           "${HOME}/.bashrc"
+ln -fs "dotfiles/bash/screenrc"         "${HOME}/.screenrc"
+ln -fs "dotfiles/bash/inputrc"          "${HOME}/.inputrc"
+ln -fs "dotfiles/git/gitconfig"         "${HOME}/.gitconfig"
+ln -fs "dotfiles/git/gitignore_global"  "${HOME}/.gitignore_global"
+ln -fs "dotfiles/vim/vimrc"             "${HOME}/.vimrc"
+ln -fs "dotfiles/vimperatorrc"          "${HOME}/.vimperatorrc"
+ln -fs "dotfiles/X/Xdefaults"           "${HOME}/.Xdefaults"
+ln -fs "dotfiles/X/xmodmap"             "${HOME}/.xmodmap"
 
-# Link in directories, removing whatever's already there first.
-if [ -e "${HOME}/.vim" ]; then
-    rm -r "${HOME}/.vim"
-fi
+rm -rf "${HOME}/.vim"
 ln -fs "dotfiles/vim" "${HOME}/.vim"
+
+#If install ALL flag set then
+if [ "$1" == "-a" ]; then
+    rm -f "${HOME}/.xinitrc"
+    cp "dotfiles/X/xinitrc"             "${HOME}/.xinitrc"
+    rm -rf "${HOME}/.xmonad"
+    cp "dotfiles/xmonad"                "${HOME}/.xmonad"
+fi  
