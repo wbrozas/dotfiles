@@ -15,7 +15,12 @@ rm -rf "${HOME}/.vim"
 mkdir -p "${HOME}/.vim/bundle"
 git clone https://github.com/gmarik/vundle.git "${HOME}/.vim/bundle/vundle"
 
+#This is to prevent vundle from complaining my colorscheme does not exist
+sed -i 's/colorscheme /"TEMPCOMMENT"colorscheme /' "${HOME}/.vimrc"
+
 vim +BundleInstall +qall
+
+sed -i 's/"TEMPCOMMENT"//' "${HOME}/.vimrc"
 
 #If install ALL flag set then
 if [ "$1" == "-a" ]; then
