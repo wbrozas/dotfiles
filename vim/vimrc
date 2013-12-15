@@ -20,6 +20,7 @@ syntax on
 set bs=indent,eol,start
 set hlsearch
 set ruler
+set number
 
 set t_Co=256
 set laststatus=2
