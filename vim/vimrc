@@ -119,6 +119,7 @@ set shiftwidth=4
 set smarttab autoindent
 set incsearch
 set pastetoggle=<F2>
+nnoremap <F3> :NumbersToggle<CR> 
 
 colorscheme hornet
 
