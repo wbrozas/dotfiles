@@ -90,6 +90,7 @@ Bundle 'kien/ctrlp.vim'
 Bundle 'ervandew/supertab'
 Bundle 'myusuf3/numbers.vim'
 Bundle 'bling/vim-airline'
+Bundle 'flazz/vim-colorschemes'
 
 
 
@@ -119,7 +120,7 @@ set smarttab autoindent
 set incsearch
 set pastetoggle=<F2>
 
-colorscheme desert
+colorscheme hornet
 
 let mapleader=","
 
