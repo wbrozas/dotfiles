@@ -89,6 +89,7 @@ Bundle 'scrooloose/nerdcommenter'
 Bundle 'kien/ctrlp.vim'
 Bundle 'ervandew/supertab'
 Bundle 'myusuf3/numbers.vim'
+Bundle 'bling/vim-airline'
 
 
 filetype plugin indent on     " required!
@@ -106,6 +107,9 @@ filetype plugin indent on     " required!
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+set t_Co=256
+set laststatus=2
 
 set tabstop=4
 set expandtab
